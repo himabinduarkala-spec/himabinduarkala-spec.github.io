@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hima Bindu Arkala | Portfolio</title>
+  <meta name="description" content="Portfolio of Hima Bindu Arkala, B.Tech CSE (AI & ML) student and aspiring frontend developer.">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.6;
+      color: #1f2937;
+      background: #f8fafc;
+    }
+    a { color: inherit; text-decoration: none; }
+    .container { width: min(1050px, 92%); margin: auto; }
+    header {
+      background: linear-gradient(135deg, #111827, #374151);
+      color: white;
+      padding: 80px 0 70px;
+    }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 65px;
+    }
+    .logo { font-size: 1.2rem; font-weight: 700; }
+    nav ul { list-style: none; display: flex; gap: 22px; }
+    nav a { color: #e5e7eb; font-size: .95rem; }
+    nav a:hover { color: white; }
+    .hero h1 { font-size: clamp(2.3rem, 6vw, 4.3rem); margin-bottom: 12px; }
+    .hero h2 { font-size: 1.35rem; font-weight: 500; color: #d1d5db; margin-bottom: 18px; }
+    .hero p { max-width: 680px; color: #e5e7eb; font-size: 1.05rem; }
+    .buttons { margin-top: 28px; display: flex; gap: 12px; flex-wrap: wrap; }
+    .btn {
+      display: inline-block; padding: 11px 18px; border-radius: 8px;
+      border: 1px solid #d1d5db; background: white; color: #111827;
+      font-weight: 600;
+    }
+    .btn.secondary { background: transparent; color: white; border-color: #9ca3af; }
+    section { padding: 65px 0; }
+    section:nth-of-type(even) { background: white; }
+    .section-title { font-size: 2rem; margin-bottom: 12px; color: #111827; }
+    .section-intro { color: #6b7280; margin-bottom: 28px; max-width: 750px; }
+    .skills { display: flex; flex-wrap: wrap; gap: 10px; }
+    .skill {
+      background: #e5e7eb; padding: 8px 13px; border-radius: 999px;
+      font-size: .92rem;
+    }
+    .projects {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: #f8fafc; border: 1px solid #e5e7eb; border-radius: 12px;
+      padding: 24px;
+    }
+    section:nth-of-type(even) .card { background: #f8fafc; }
+    .card h3 { margin-bottom: 10px; color: #111827; }
+    .card p { color: #6b7280; font-size: .95rem; }
+    .card .tag {
+      display: inline-block; margin-top: 16px; font-size: .8rem;
+      padding: 5px 9px; border-radius: 6px; background: #e5e7eb;
+    }
+    .about-grid {
+      display: grid; grid-template-columns: 1.4fr .8fr; gap: 35px;
+    }
+    .info-box {
+      border-left: 4px solid #374151; padding-left: 18px;
+    }
+    .info-box p { margin-bottom: 8px; color: #4b5563; }
+    .contact {
+      text-align: center;
+    }
+    footer {
+      background: #111827; color: #d1d5db; text-align: center;
+      padding: 25px 0; font-size: .9rem;
+    }
+    @media (max-width: 700px) {
+      nav { align-items: flex-start; gap: 15px; }
+      nav ul { gap: 10px; flex-wrap: wrap; justify-content: flex-end; }
+      .about-grid { grid-template-columns: 1fr; }
+      header { padding-top: 40px; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <nav>
+      <div class="logo">Hima Bindu Arkala</div>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="hero">
+      <h1>Hi, I'm Hima Bindu.</h1>
+      <h2>B.Tech CSE (AI & ML) Student • Aspiring Frontend Developer</h2>
+      <p>
+        I enjoy building practical, user-friendly web applications and exploring
+        technologies that turn ideas into useful digital experiences.
+      </p>
+      <div class="buttons">
+        <a class="btn" href="#projects">View My Projects</a>
+        <a class="btn secondary" href="https://github.com/himabinduurkala-spec" target="_blank" rel="noopener">GitHub Profile</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section id="about">
+  <div class="container">
+    <h2 class="section-title">About Me</h2>
+    <p class="section-intro">
+      I am a B.Tech Computer Science and Engineering student specializing in
+      Artificial Intelligence & Machine Learning. I have a foundation in
+      frontend development, programming, databases, and team-based project work.
+    </p>
+    <div class="about-grid">
+      <div>
+        <p>
+          I am interested in creating clean and practical web solutions,
+          learning new technologies, and contributing to innovative projects.
+          I have also participated in hackathon activities and worked on
+          student projects involving web development and Python/MySQL.
+        </p>
+      </div>
+      <div class="info-box">
+        <p><strong>Education:</strong> B.Tech CSE (AI & ML)</p>
+        <p><strong>Role:</strong> Frontend Developer</p>
+        <p><strong>Location:</strong> Hyderabad, India</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="container">
+    <h2 class="section-title">Skills</h2>
+    <p class="section-intro">Technologies and tools I have worked with.</p>
+    <div class="skills">
+      <span class="skill">React</span>
+      <span class="skill">JavaScript</span>
+      <span class="skill">HTML</span>
+      <span class="skill">CSS</span>
+      <span class="skill">Python</span>
+      <span class="skill">Java</span>
+      <span class="skill">Node.js</span>
+      <span class="skill">MySQL</span>
+      <span class="skill">MongoDB</span>
+      <span class="skill">Git & GitHub</span>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="container">
+    <h2 class="section-title">Projects</h2>
+    <p class="section-intro">A few academic and hackathon projects.</p>
+
+    <div class="projects">
+      <div class="card">
+        <h3>Multilingual Voice Assistant</h3>
+        <p>
+          A web-based voice assistant concept designed for regional-language,
+          English, and code-mixed users. The project combines speech input,
+          language processing, and response generation.
+        </p>
+        <span class="tag">Hackathon Project</span>
+      </div>
+
+      <div class="card">
+        <h3>Online Student Report Card System</h3>
+        <p>
+          A student project for managing report-card information with
+          Python and MySQL, including database-based record operations.
+        </p>
+        <span class="tag">Python • MySQL</span>
+      </div>
+
+      <div class="card">
+        <h3>Uni-Cart</h3>
+        <p>
+          A frontend web project created using HTML, CSS, and JavaScript,
+          focused on building a simple and user-friendly shopping interface.
+        </p>
+        <span class="tag">HTML • CSS • JavaScript</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <h2 class="section-title">Hackathon Experience</h2>
+    <p class="section-intro">
+      Participated in hackathon activities involving ideation, team
+      collaboration, project development, documentation, and presentation.
+    </p>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="container contact">
+    <h2 class="section-title">Let's Connect</h2>
+    <p class="section-intro" style="margin-left:auto;margin-right:auto;">
+      You can find my projects and coding work on GitHub.
+    </p>
+    <a class="btn" href="https://github.com/himabinduurkala-spec" target="_blank" rel="noopener">
+      Visit My GitHub
+    </a>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    © 2026 Hima Bindu Arkala • Built with HTML & CSS • Hosted with GitHub Pages
+  </div>
+</footer>
+
+</body>
+</html>
